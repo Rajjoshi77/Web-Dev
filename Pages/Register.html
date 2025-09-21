@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register - Raj Joshi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ 
+   <aside>
+    <ul>
+       <a href="../../portfolio profile page/Pages/Home.html"><li>Home</li></a>
+            <a href="../../portfolio profile page/Pages/About.html"><li>About</li></a>
+            <a href="../../portfolio profile page/Pages/exp2.html"><li>Exp-2</li></a>
+            <a href="../../portfolio profile page/Pages/Review.html"><li>Review Us</li></a>
+            <a href="../../portfolio profile page/Pages/Login.html"><li>Login</li></a>
+            <a href="../../portfolio profile page/Pages/Register.html"><li>Register</li></a>
+            <a href="D:/degree/sem 5/Web Dev Lab/js practicals/simple_Intrest/simple_interest.html"><li>Table Printer</li></a>
+            <a href="/js practicals/simple_Intrest/simple_interest.html"><li>Simple Interest</li></a>
+    </ul>
+  </aside>
+
+
+  <main>
+    <header class="header">
+      <h1>Registration</h1>
+      <p>Create your account</p>
+    </header>
+
+    <div class="content">
+      <form>
+       
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label>Age</label>
+        <input type="number" min="1" max="120" placeholder="Enter age">
+
+        <label>Phone Number</label>
+        <input type="tel" placeholder="Enter phone number" pattern="[0-9]{10}">
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter email" required>
+
+        <label>Password</label>
+        <input type="password" placeholder="Enter password" required>
+
+        <label>Confirm Password</label>
+        <input type="password" placeholder="Re-enter password" required>
+
+        <label>Date of Birth</label>
+        <input type="date">
+
+        <label>Meeting Time</label>
+        <input type="time">
+
+        <label>Gender</label>
+        <div class="form-group-inline">
+          <input type="radio" name="gender" value="male"> Male
+          <input type="radio" name="gender" value="female"> Female
+          <input type="radio" name="gender" value="other"> Other
+        </div>
+
+        <label>Skills</label>
+        <div class="form-group-inline">
+          <input type="checkbox" name="skills" value="HTML"> HTML
+          <input type="checkbox" name="skills" value="CSS"> CSS
+          <input type="checkbox" name="skills" value="JS"> JavaScript
+        </div>
+
+        <label>Country</label>
+        <select>
+          <option value="">Select</option>
+          <option>India</option>
+          <option>USA</option>
+          <option>UK</option>
+        </select>
+
+        <label>Upload Profile Picture</label>
+        <input type="file" accept="image/*">
+
+        <label>Website</label>
+        <input type="url" placeholder="https://example.com">
+
+        <label>Favorite Color</label>
+        <input type="color">
+
+        <label>Experience Level</label>
+        <input type="range" min="0" max="10">
+    
+        <label>About Yourself</label>
+        <textarea rows="4" placeholder="Write something about yourself"></textarea>
+
+        <button type="submit">Register</button>
+      </form>
+    </div>
+
+    <div class="footer">
+      <p>&copy; 2025 Raj Joshi</p>
+    </div>
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Interest Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <aside>
+        <ul>
+            <a href="../../portfolio profile page/Pages/Home.html"><li>Home</li></a>
+            <a href="../../portfolio profile page/Pages/About.html"><li>About</li></a>
+            <a href="../../portfolio profile page/Pages/exp2.html"><li>Exp-2</li></a>
+            <a href="../../portfolio profile page/Pages/Review.html"><li>Review Us</li></a>
+            <a href="../../portfolio profile page/Pages/Login.html"><li>Login</li></a>
+            <a href="../../portfolio profile page/Pages/Register.html"><li>Register</li></a>
+            <a href="../Table_printer/Table.html"><li>Table Printer</li></a>
+            <a href="simple_interest.html"><li>Simple Interest</li></a>
+        </ul>
+    </aside>
+
+    <main>
+<header>
+            <h1>Simple Interest Calculator</h1>
+            <p>Calculate your simple interest</p>
+        </header>
+
+        <div class="content">
+            <div class="calculator-form">
+                <div class="form-group">
+                    <label for="Principle">Principal Amount:</label>
+                    <div class="range-container">
+                        <input type="range" id="Principle" min="100" max="10000" value="5000" step="100" oninput="updatePrinciple(this.value)">
+                        <span class="range-value" id="PrincipleValue">5000</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="Rate">Interest Rate (% per annum):</label>
+                    <div class="range-container">
+                        <input type="range" id="Rate" min="1" max="20" value="5" step="0.5" oninput="updateRate(this.value)">
+                        <span class="range-value" id="RateValue">5</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="year">Time Duration (Years):</label>
+                    <input type="number" id="year" min="1" max="30" value="1" oninput="cal()">
+                </div>
+
+                <div class="result">
+                    <p id="resultDisplay"></p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Raj Joshi</p>
+        </footer>
+    </main>
+
+    <script src="intrest.js"></script>
+</body>
+</html>
